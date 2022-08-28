@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>login</title>
+ <style>
+  form{
+    background-color:rgb(15, 109, 231)
+  }
+ </style>
+</head>
+<body>
+ <!-- prompt user informations -->
+ <form action="get">
+ <label>First name:
+  <br><input type="text" name="First name" placeholder="eg albert">
+ </label>
+<br>
+<br>
+ <label>Last name:
+  <br><input type="text" name="Last name" placeholder="eg stones">
+ </label>
+ <p>Gender</p>
+<!-- prompt user gender  -->
+ <label>
+  Male
+<input type="checkbox" name="Gender" value="Male">
+ </label>
+
+ <label>
+  Female
+  <input type="checkbox" name="Gender" value="Female">
+  <br>
+  <br>
+ </label>
+
+ <!-- prompt user mail -->
+  <label for="email">Enter your email:
+  <br> <input type="email" id="email"   pattern=".+@gmail.com" size="30" required>
+  </label>
+  <br>
+  <br>
+
+  <!-- prompt user tel -->
+  <label for="phone">Enter tel number:
+   <br><input type="tel" id="ohine" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="30" required>
+   <!-- <small>format: 123-456-7890</small> -->
+  </label>
+<!-- prompt user for course info -->
+  <br>
+  <br>
+  <p>select course of choice</p>
+<select name="course">
+ <option value="">Advanced vawulence</option>
+ <option value="">Accounting vawulence</option>
+ <option value="">pure and applied vawulence</option>
+ <option value="">engineering vawulence</option>
+ <option value="">developing vawulence</option>
+ <option value="">geographic vawulence</option>
+ <option value="">medical vawulence</option>
+ <option value="">animal vawulence</option>
+ <option value="">international vawulence</option>
+ <option value="">mass vawulence</option>
+ <option value="">political vawulence</option>
+</select>
+<br>
+<br>
+ <!-- <button action ="" type="submit">Submit</button> -->
+  <form action="submit.html">
+    <input type="submit" value="Submit" />
+  <input type="reset" value="Reset">
+  </form>
+
+ </form>
+</body>
+</html>
